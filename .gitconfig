@@ -1,0 +1,23 @@
+[difftool]
+    prompt = false
+    trustExitCode = true
+[mergetool]
+    prompt = false
+[user]
+    name = nickbuckham
+    username = nick@buckhamduffy.com
+    email = nick.buckham@icloud.com
+[pull]
+    rebase = true
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
+[rebase]
+    autostash = true
+[core]
+    autocrlf = input
+[push]
+    autoSetupRemote = true
+
